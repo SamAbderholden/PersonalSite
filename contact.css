@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Set body height to 100% of the viewport height */
+}
+
+nav {
+    margin: 3vh 0px 0px 3vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    height: 7vh;
+}
+
+nav a {
+    font-family: 'Tektur', sans-serif;
+    text-decoration: none;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: min(4vh, 4vw);
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    animation: fadeInLink 1s ease-out forwards;
+}
+
+main {
+    flex: 1; 
+    margin-top: 2vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeInLink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+nav a:nth-child(1) {
+    animation: fadeInLink 1.5s ease-out forwards 0.5s;
+}
+
+nav a:nth-child(2) {
+    animation: fadeInLink 1.5s ease-out forwards 1.25s;
+}
+
+nav a:nth-child(3) {
+    margin-top: 1vh;
+    border-bottom: 1vh solid white;
+    animation: fadeInLink 1.5s ease-out forwards 2s;
+}
+
+#contactWrapper{
+    height: 50vh;
+    width: 40vw;
+    border: 1vh solid white;
+    border-radius: min(2vw, 2vh);
+    margin-left: -35vw;
+    opacity: 0;
+}
+
+#contactWrapper h1{
+    font-size: min(4vh, 4vw);
+    font-weight: bold;
+    font-family: 'Tektur', sans-serif;
+    color: white;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    margin-top: 1.5vh;
+    width: 80%;
+    gap: 1vh;
+}
+
+label{
+    color: white;
+    font-family: 'Tektur', sans-serif;
+    font-size: min(2vh, 2vw);
+}
+
+input{
+    height: 2vh;
+}
+
+#message{
+    height: 10vh;
+}
+
+#subBt{
+    margin-top: 1.5vh;
+    width: 5vw;
+    height: 3vh;
+    color: white;
+    font-family: 'Tektur', sans-serif;
+    background-color: black;
+    border: 0.5vh solid white;
+    font-size: min(2vh, 2vw);
+    border-radius: min(1vh, 1vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#resumeWrapper{
+    display: flex;
+    position: absolute;
+    left: 60vw;
+    top: 18vh;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+}
+
+#resume{
+    opacity: 0;
+}
+
+#resumeDownload{
+    opacity: 0;
+    background-color: black;
+    border: 0.5vh solid white;
+    border-radius: min(1vh, 1vw);
+    font-family: 'Tektur', sans-serif;
+    font-size: min(2vh, 2vw);
+    color: white;
+    width: 10vw;
+}

@@ -72,12 +72,45 @@ main {
     top: 20vh;
 }
 
-#resume{
+#profilePic{
+    opacity: 0;
+    height: calc(min(50vh, 50vw) + 2vh);
+    width: min(50vh, 50vw);
+    border: 1vh solid rgba(245, 245, 245, 0.884);
+}
+
+#imageWrapper{
     position: absolute;
-    left: 55vw;
-    top: 5vh;
+    left: 60vw;
+    top: 10vh;
+}
+
+#btWrapper{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
     opacity: 0;
 }
+
+button{
+    width: 7vw;
+    height: 5vh;
+    font-family: 'Tektur', sans-serif;
+    font-weight: bold;
+    font-size: min(2vw, 2vh);
+    border: min(0.5vh, 0.5vw) solid white;
+    background-color: black;
+    border-radius: min(5vh, 5vw);
+    color: white;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
 
 @keyframes fadeInLink {
     0% {
